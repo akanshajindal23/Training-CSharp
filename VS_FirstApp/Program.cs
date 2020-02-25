@@ -14,7 +14,15 @@ namespace VS_FirstApp
 
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            int result = Add(10, 20);
+            Console.WriteLine(result);
+
+            Console.WriteLine("Press any key to terminate..");
+            Console.ReadLine();
+        }
+        static int Add(int firstValue, int secondValue)
+        {
+            return (firstValue + secondValue);
         }
     }
 }
