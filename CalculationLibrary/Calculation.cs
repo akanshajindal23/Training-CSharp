@@ -23,8 +23,17 @@
         /// <returns>returns the subtraction result</returns>
         public static int Subtract(int firstValue, int secondValue)
         {
-            return (firstValue - secondValue);
+            
+
+            if (firstValue > secondValue)
+
+                return (firstValue - secondValue);
+
+            else
+                return (secondValue - firstValue);
+             
         }
+
         /// <summary>
         /// Method to multiply two integer numbers
         /// </summary>
@@ -43,6 +52,10 @@
         /// <returns>retuns the result of divide</returns>
         public static int divide(int firstValue, int secondValue)
         {
+            if (secondValue == 0)
+            {
+                System.Console.WriteLine("denominator can't be zero");
+            }
             return (firstValue / secondValue);
         }
     }
